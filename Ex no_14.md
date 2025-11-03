@@ -1,59 +1,34 @@
 # EX 14 C program to delete first element in an array.
-
+## DATE:
 ## AIM:
 To write a C program to delete first element in an array.
 
-## Algorithm
-1.Start the program and declare an array with its size.
-
-2.Read the size and elements of the array from the user.
-
-3.Shift all elements one position to the left starting from index 1.
-
-4.Decrease the size of the array by 1.
-
-5.Display the updated array without the first element. 
+## Algorithm:
+1. Start.
+2. Define a variables i,j,a.
+3. Read the value using scanf.
+4. Ask the user to make an input
+5. Print out the answer
+6. End. 
 
 ## Program:
-```
-#include <stdio.h>
-
+```c program
+#include<stdio.h> 
 int main()
 {
-    int arr[100], n, i;
-
-    printf("Enter the number of elements: ");
-    scanf("%d", &n);
-
-    printf("Enter the elements:\n");
-    for(i = 0; i < n; i++)
-    {
-        scanf("%d", &arr[i]);
-    }
-
-    // Shift elements to delete the first one
-    for(i = 0; i < n - 1; i++)
-    {
-        arr[i] = arr[i + 1];
-    }
-
-    n--; // Reduce size after deletion
-
-    printf("Array after deleting the first element:\n");
-    for(i = 0; i < n; i++)
-    {
-        printf("%d ", arr[i]);
-    }
-
-    printf("\n");
-    return 0;
+int i,n,a[10];
+scanf("%d",&n); 
+for(i=0;i<n;i++)
+{
+scanf("%d",&a[i]);
 }
-
+for(i=1;i<n;i++) 
+printf("%d ",a[i]);
+}
 ```
 
 ## Output:
-![image](https://github.com/user-attachments/assets/f2739949-7154-4802-b448-1d4ed60b867c)
-
+![image](https://github.com/user-attachments/assets/f6af2d03-16bb-4ede-bfe2-2c89d3e2b538)
 
 ## Result:
 Thus the program was executed and the output was verified successfully.
